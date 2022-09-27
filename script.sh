@@ -32,3 +32,14 @@ for user in $(awk '{print $1}' usersXgroups.txt); do
     echo "  [->] Forçar $user trocar a senha no primeiro login "
     chage -d 0 $user
 done
+
+#Definindo permissões para os diretórios
+chown root:GRP_ADM /adm
+chown root:GRP_VEN /ven
+chown root:GRP_SEC /sec
+
+chmod 770 /adm
+chmod 770 /ven
+chmod 770 /sec
+
+chmod 777 /publico
