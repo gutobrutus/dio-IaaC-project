@@ -1,1 +1,3 @@
 .vagrant/
+*-VBoxSVC-*.log
+*-VBoxHeadless-*.log
